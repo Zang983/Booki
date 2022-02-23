@@ -1,0 +1,533 @@
+body
+{
+	font-family: Raleway;
+	max-width:1440px;
+	margin:auto;
+	font-size : 90%;
+}
+
+/************************************************** STRUCTURE DU SITE **************************************************/
+
+
+/*
+PARTIE HEADER :
+Le logo et le menu sont dans un contenant commun afin de les aligner.
+Le bloc du logo prends 80% de la largeur disponible, le menu 20% partager entre les 2 éléments de la liste à puce.
+*/
+header
+{
+
+	display:flex;
+	flex-wrap: wrap;
+
+}
+header, section,#filtre,#champ_recherche,#activite,#hebergement
+{
+	margin-left:3%;
+	margin-right:3%;
+	
+}
+#logo img
+{
+	height:55px;	
+	object-fit: cover;
+}
+#en_tete
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	width:100%;
+}
+h1 
+{
+	width:100%;
+	margin-top:0px;
+}
+
+header ul
+{
+	display:flex;	
+	justify-content: space-around;
+	margin-top:0px;
+}
+
+header li
+{
+	list-style-type: none;
+	margin-left:50px;	
+	
+}
+header a
+{
+	display:flex;
+	align-items: center;
+	height:88px;
+}
+header h2, header p
+{
+	width : 100%;
+	margin:0px;
+	margin-top:5px;
+}
+
+
+/*
+PARTIE RECHERCHE :
+*/
+
+#champ_recherche
+{
+	display:flex;
+	margin-top : 1%;
+	align-items: center;
+	align-content: center;
+	height:55px;
+	padding-bottom:20px;
+
+}
+form
+{
+	display:flex;
+	width:60%;
+}
+#champ_recherche i
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:53px;
+	height:51px;
+}
+#champ_recherche input
+{
+	height:47px;
+	width:235px;
+	padding-left:20px;
+}
+#champ_recherche button
+{
+	padding-left:25px;
+	padding-right:25px;
+	width:135px;
+}
+#champ_recherche form button i /* Nous cachon l'icone de loupe pour les grandes résolutions.*/
+{
+	display:none;
+}
+
+#filtre
+{
+	margin-top:1%;
+	display:flex;
+	flex-wrap:wrap;
+	margin-bottom:2%;
+	align-items:center;
+}
+#filtre button
+{
+	display:flex;
+	align-items:center;
+	justify-content: flex-start;
+	margin-left:30px;
+	height:55px;
+	padding-right:20px;
+	padding-left:0px;
+}
+#filtre button i
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height:55px;
+	min-width:55px;/*Si le contenu du filtre contient un saut de ligne, ça peut déformer l'icone, sauf avec ce paramètre*/
+	margin-right:15px;
+	font-size:115%;
+}
+
+#information
+{
+	display:flex;
+	align-items: center;
+	margin-top:1%;
+	width:95%;
+
+}
+#information i
+{
+	min-width:30px;
+	height:30px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-right:20px;
+}
+/*
+PARTIE HÉBERGEMENT
+*/
+
+figure p
+{
+	font-size:85%;
+	margin:0px;
+}
+
+#hebergement
+{
+	display:flex;
+	width:100%;
+	padding-bottom:1%;
+	margin:0px;
+}
+#afficher_plus
+{
+	width:100%;
+	margin:0px;
+	margin-bottom:2%;
+	margin-top:2%;
+	padding:0px;
+	padding-bottom:2%;
+}
+#liste_hebergement
+{
+	padding-left:4.54%;
+	padding-right:4.54%;
+	display:flex;
+	flex-wrap: wrap;
+	width:61.1%;
+	justify-content: space-between;
+	margin-top:0px;
+	margin-right:2%;
+}
+
+#liste_hebergement a
+{
+	width:30%;
+	height:215px;
+	margin-bottom:2%;
+	
+}
+
+.image_top_petit
+{
+	display:flex;
+	height:98%;
+	flex-direction: column;
+	margin:0px;
+}
+.image_top_petit img
+{
+	object-fit: cover;
+	height:114px;
+	margin:5px;
+}
+.image_top_petit figcaption
+{
+	margin-left:3%;
+}
+.image_top_petit figcaption p, h3
+{
+	width:100%;
+	margin:0px;
+	margin-bottom:2%;
+}
+
+
+
+/*
+PARTIE POPULAIRE
+*/
+#populaire
+{
+	width:29.16%;
+	margin-left:2%;
+}
+section h2
+{
+	margin-top:20px;
+	width:82.4%;
+}
+#populaire h2
+{
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content: space-between;
+}
+#populaire  a
+{
+	display:flex;
+	height:146px;
+	max-width:100%;
+	margin-bottom:5.27%;
+	margin-left:8.8%;
+	margin-right:8.8%;
+}
+#populaire figure
+{
+	display:flex;
+	margin:1%;
+	width:100%;
+}
+#populaire h3
+{
+	margin-top:7%;
+}
+#populaire a img
+{
+	object-fit: cover;
+	min-width:37.20%;
+	max-width:37.20%;
+	margin-right:2%;
+	padding:5px;
+}
+
+#populaire figcaption
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom:5px;
+}
+#liste_hebergement h3, #populaire h3,#liste_hebergement p, #populaire p
+{
+	margin-left:0px;
+}
+/*
+PARTIE ACTIVITE
+*/
+#activite
+{
+	max-width:100%; 
+
+}
+#liste_activite
+{
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	padding-top:1%;
+
+}
+.trio
+{
+	display:flex;
+	width:48%;
+	justify-content: space-between;
+	height:445px;
+}
+.activite_grand
+{
+	width :45%;
+}
+
+.double_activite
+{
+	width:45%;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.petite_activite
+{
+	display:flex;
+	height:45%;
+	width:100%;
+}
+.trio figure
+{
+	margin:0px;
+	padding:0px;
+}
+.activite_grand img
+{
+	height:390px;
+	width:100%;
+	object-fit:cover;
+}
+.petite_activite figure
+{
+	width:100%;
+}
+.petite_activite img
+{
+	object-fit: cover;
+	height:153px;
+	width:100%;
+}
+.trio h3
+{
+	padding-left:5%;
+	padding-top:6px;
+}
+
+/*
+PARTIE FOOTER
+*/
+footer
+{
+	padding-left:3.5%;
+	margin-top:50px;
+	padding-top:50px;
+	background-color:#F2F2F2;
+}
+footer nav
+{
+	display:flex;
+	justify-content: space-between;
+	width:65%;
+}
+footer ul
+{
+	padding:0px;
+}
+footer nav ul li
+{
+	display:flex;
+	list-style-type:none;
+	margin:0px;
+	margin-bottom:10px;
+	padding:0px;
+}
+
+/************************************************** STYLE DES DIFFÉRENTS ÉLÉMENTS **************************************************/
+
+
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+
+
+/*
+PARTIE HEADER
+*/
+
+header a:hover
+{
+	border-top:3px solid #0065FC;
+	color:#0065FC;
+}
+
+
+/*
+PARTIE RECHERCHE
+*/
+
+#champ_recherche i
+{
+	background-color:#F2F2F2;
+	border-radius :25px 0 0 25px;
+
+}
+
+#champ_recherche input
+{
+
+	padding-right:10px;
+	border:none;
+	border-top: 1px solid #F2F2F2;
+	border-bottom:1px solid #F2F2F2;
+	font-weight:bold;
+}
+
+#champ_recherche button
+{
+	
+	border:none;
+	cursor:pointer;
+	background-color:#0065FC;
+	color:white;
+	border-radius: 0 20px 20px 0;
+}
+
+#filtre, #filtre button,#champ_recherche,#champ_recherche button,input
+{
+	font-weight:bold;
+	font-size:100%;
+}
+
+#filtre button i
+{
+	background-color:#DEEBFF;
+	border-radius:100%;	
+	color:#0065FC;
+	
+}
+#filtre button:hover
+{
+	background-color:#DEEBFF;
+}
+
+#filtre button
+{
+	background-color: white;
+	border-radius: 35px 35px 35px 35px;
+	border: 2px solid #D9D9D9;
+	border-left:none;
+	cursor:pointer;
+}
+#information
+{
+	font-weight:normal
+}
+#information i
+{
+	color:#0065FC;
+	border:1px solid #D9D9D9;
+	border-radius:100%;
+}
+/*
+PARTIE HÉBERGEMENT
+*/
+#liste_hebergement,#populaire
+{
+	background-color:#F2F2F2;
+	border-radius:25px;
+}
+
+#liste_hebergement figure, #populaire figure
+{
+	background-color:white;
+	border-radius:25px;
+	box-shadow: 1px 1px 3px 3px lightgray;
+}
+#liste_hebergement figure:hover, #populaire figure:hover,.activite_grand:hover,.petite_activite:hover
+{
+	box-shadow: 3px 3px 3px 3px lightgray;
+}
+#liste_hebergement a img
+{
+	border-radius: 25px 25px 0 0 ;
+}
+#populaire a img
+{
+	border-radius : 25px 0 0 25px;
+}
+.image_top_petit i, .image_gauche i
+{
+	color:#0065FC;
+}
+.gris i
+{
+	color:#d9d9d9;
+}
+#afficher_plus
+{
+	font-weight:bold;
+}
+
+/*
+PARTE ACTIVITÉ
+*/
+.petite_activite, .activite_grand
+{
+	border-radius : 25px;
+	box-shadow: 1px 1px 3px 3px lightgray;
+}
+.petite_activite img,.activite_grand img
+{
+	border-radius: 25px 25px 0 0 ;
+}  

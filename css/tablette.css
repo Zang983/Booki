@@ -1,0 +1,94 @@
+#champ_recherche
+{
+	margin-top:20px;
+	padding-bottom:0px;
+}
+#filtre p
+{
+	width:100%;
+}
+#filtre button
+{
+	margin-left:0px;
+	margin-right:8px;
+}
+
+#hebergement
+{
+	flex-wrap: wrap;
+	width:100%;
+}
+
+#liste_hebergement, #populaire,#activite,header,#filtre
+{
+	
+	width:98%;
+	margin:0px;
+	padding:0px;
+	margin-left:1%;
+	margin-right:1%;
+}
+#populaire
+{
+	width:100%;
+	margin-top:20px;
+}
+
+h2,#populaire h2,#liste_hebergement h2
+{
+	width:98%;
+	margin:0px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+#populaire a
+{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	height:200px;
+}
+#populaire h2
+{
+	width:95%;
+}
+#liste_activite
+{
+	flex-wrap: wrap;
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+.trio h3
+{
+	width:40%;
+}
+.trio
+{
+	width:100%;
+	flex-wrap:wrap;
+	height:auto;
+}
+.double_activite
+{
+	flex-wrap:wrap; 
+	width:100%;
+}
+.activite_grand, .petite_activite
+{
+	width:100%;
+	margin-bottom:20px;
+	height:200px;
+
+}
+.trio .activite_grand img,.petite_activite img
+{
+	height:150px;
+}
+footer
+{
+	margin-top:0px;
+}
