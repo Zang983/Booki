@@ -49,23 +49,19 @@ section:not(.filters, .search) {
 
 }
 
-
 .section-title {
     margin: 0;
     font-size: 22px;
 }
-
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
 :is(button, .card, figure):hover {
     cursor: pointer;
 }
-
 .card-subtitle {
     font-size: 0.875rem;
 }
@@ -356,9 +352,14 @@ form .search-mobile {
 .hebergements .section-title {
     width: 100%;
 }
-
-.hebergements .card {
+.hebergements a{
+    display:block;
     width: 30.828%;
+    height:207px;
+}
+.hebergements .card {
+    width: 100%;
+    height:207px;
     max-height: 207px;
     display: flex;
     flex-direction: column;
@@ -398,7 +399,7 @@ form .search-mobile {
 }
 
 @media(max-width:1024px) {
-    .hebergements .card {
+    .hebergements a{
         width: 31.02%;
 
     }
@@ -411,7 +412,7 @@ form .search-mobile {
         margin-top: 15px;
     }
 
-    .hebergements .card {
+    .hebergements a {
         width: 100%;
 
     }
@@ -515,13 +516,12 @@ form .search-mobile {
     width: 100%;
     margin-bottom: 30px;
 }
-
-.activity figure {
+.activity a{
     width: 23.204%;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-
 }
+
 
 .activity figure img {
     width: 100%;
@@ -536,7 +536,7 @@ form .search-mobile {
     font-weight: bold;
 }
 @media (max-width: 1024px) {
-    .activity figure{
+    .activity a{
         width: 22.338%;
     }
     .activity figure img {
@@ -551,7 +551,7 @@ form .search-mobile {
     .activity {
         gap: 15px;
     }
-    .activity figure{
+    .activity a{
         width: 100%;
 
     }
